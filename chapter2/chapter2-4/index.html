@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>大事な機能を知ろう〜コメント文と'use strict'〜</title>
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div class="logo"></div>
+        <h1 class="page-title">大事な機能を知ろう〜コメント文と'use strict'〜</h1>
+	</div>
+</header>
+
+<main>
+	<div class="container">
+
+		<!-- メインコンテンツ -->
+		<p>現在のJavaScriptで許されていないプログラミングをしている場合、コンソールにエラーが表示され、プログラムの実行が止まります。</p>
+		<!-- メインコンテンツ -->
+
+	</div>
+</main>
+
+<footer>
+	<div class="container">
+		<small>JavaScript Study Lab.</small>
+	</div>
+</footer>
+
+<script>
+/*
+ *use strictモードではコンソールにエラー文表示される
+ *コードは実行されない
+ */
+'use strict';
+//定義済みの変数を書き換える
+undefined = 'hello';
+/*
+ *変数の宣言で
+ *varを省略してはいけない
+ */
+
+message = 'ストリクトモードじゃない場合エラーなく実行されてしまう';
+window.alert(message);
+</script>
+</body>
+</html>
