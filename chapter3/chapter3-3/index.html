@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>&#91;ES6&#93;テキストを操作する②〜テンプレート文字列〜</title>
+  </head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="logo"></div>
+    <h1 class="page-title">&#91;ES6&#93;テキストを操作する②〜テンプレート文字列〜</h1>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+
+    <!-- メインコンテンツ -->
+
+    <!-- メインコンテンツ -->
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <small>JavaScript Study Lab.</small>
+  </div>
+</footer>
+
+<script>
+'use strict';
+//改行方法 \nを改行前に入力
+var message = 'こんにちは、鈴木さん\n現在の獲得ポイント:'
+alert(message);
+
+//ﾃﾝﾌﾟﾚｰﾄ文字列はバッククォートで囲めば改行可能
+var message2 = `こんにちは、鈴木さん
+現在の獲得ポイント:162pt`;
+alert(message2);
+
+//埋め込みは${}
+var loginName ='鈴木';
+var mypoint = 162;
+var message3 = `こんにちは${loginName}さん
+現在の獲得ポイント：${mypoint};`
+
+alert(message3);
+
+</script>
+</body>
+</html>
